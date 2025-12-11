@@ -15,15 +15,12 @@ google_analytics_id:
 # HTML Title
 title: "throwingbits"
 
-# Avatar image path
-avatar: "./images/profile.jpeg"
-
 # Name section text
 name: "@throwingbits"
 
 # Tagline section text
 tagline: >-
-    An iOS, web, and automation developer from Taiwan 🇹🇼 who also loves sharing, traveling, and writing.
+    31 years old - Software Developer, Streamer and full-time Idiot made in 🇩🇪 ✌️
 
 socials:
   - social:
