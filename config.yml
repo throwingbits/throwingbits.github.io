@@ -45,7 +45,7 @@ socials:
       title: "throwingbit's Instagram"
       target: "_blank"
   - social:
-      icon: "fa-brands fa-x-twitter"
+      icon: "fa-brands fa-twitter"
       url: "https://x.com/throwingbits"
       alt: "throwingbit's X"
       title: "throwingbit's X"
