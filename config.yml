@@ -18,6 +18,9 @@ title: "throwingbits"
 # Name section text
 name: "@throwingbits"
 
+# Avatar image path
+avatar: "./images/avatar.jpg"
+
 # Tagline section text
 tagline: >-
     Software Developer, Streamer and full-time idiot made in 🇩🇪 ✌️
