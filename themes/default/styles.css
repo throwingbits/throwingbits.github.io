@@ -3,24 +3,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Slightly softer sans */
 }
 
-/* Tokyo Night Variables */
+/* Catppuccin Mocha Palette */
 :root {
-  --tn-bg: #1a1b26;          /* Deep Blue/Black Background */
-  --tn-card-bg: #24283b;     /* Slightly lighter for buttons */
-  --tn-card-hover: #292e42;  /* Hover state */
-  --tn-text-main: #c0caf5;   /* Stormy White */
-  --tn-text-muted: #565f89;  /* Muted Blue-Grey */
-  --tn-accent-cyan: #7dcfff; /* Neon Cyan */
-  --tn-accent-pink: #bb9af7; /* Neon Purple/Pink */
-  --tn-border: #414868;      /* Borders */
+  --ctp-base: #1e1e2e;       /* Main Background */
+  --ctp-mantle: #181825;     /* Darker background for depth */
+  --ctp-surface0: #313244;   /* Card Background */
+  --ctp-surface1: #45475a;   /* Card Hover */
+  --ctp-text: #cdd6f4;       /* Main Text */
+  --ctp-subtext: #a6adc8;    /* Secondary Text */
+  --ctp-overlay: #6c7086;    /* Borders */
+  
+  /* Accents */
+  --ctp-mauve: #cba6f7;      /* Primary Accent (Purple) */
+  --ctp-pink: #f5c2e7;       /* Secondary Accent */
+  --ctp-blue: #89b4fa;       /* Links/Info */
+  --ctp-peach: #fab387;      /* Warm Accent */
 }
 
 body {
-  background-color: var(--tn-bg);
-  color: var(--tn-text-main);
+  background-color: var(--ctp-base);
+  color: var(--ctp-text);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,14 +33,12 @@ body {
   cursor: default;
   text-align: center;
   padding: 20px 0;
-  /* subtle gradient to give it depth */
-  background-image: linear-gradient(to bottom, #1a1b26, #16161e);
 }
 
 a {
   color: inherit;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease-in-out;
 }
 
 .container {
@@ -49,28 +52,25 @@ a {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
-  /* Gradient border for the cyberpunk feel */
-  border: 3px solid transparent;
-  background-image: linear-gradient(var(--tn-bg), var(--tn-bg)), 
-                    linear-gradient(135deg, var(--tn-accent-cyan), var(--tn-accent-pink));
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  box-shadow: 0 0 20px rgba(125, 207, 255, 0.2);
+  /* Double border effect: thin base, thick accent */
+  border: 4px solid var(--ctp-surface0); 
+  outline: 2px solid var(--ctp-mauve);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .name {
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 700;
   margin: 10px 0;
-  color: var(--tn-text-main);
-  text-shadow: 0 0 10px rgba(192, 202, 245, 0.3);
+  color: var(--ctp-mauve); /* Colored Name */
+  letter-spacing: 0.5px;
 }
 
 .description {
   font-size: 16px;
   margin-bottom: 30px;
   line-height: 1.6;
-  color: var(--tn-text-muted);
+  color: var(--ctp-subtext);
 }
 
 .links {
@@ -83,32 +83,29 @@ a {
 .link-button {
   display: inline-flex;
   align-items: center;
-  justify-content: center; /* Centered text looks cleaner on this theme */
+  justify-content: center;
   gap: 10px;
-  background-color: var(--tn-card-bg);
-  color: var(--tn-text-main);
+  background-color: var(--ctp-surface0);
+  color: var(--ctp-text);
   padding: 15px;
-  border-radius: 12px; /* Softer corners */
+  border-radius: 15px; /* Rounder corners for cozy vibe */
   font-size: 18px;
-  font-weight: 500;
-  border: 1px solid var(--tn-border);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  position: relative;
-  overflow: hidden;
+  font-weight: 600;
+  border: 2px solid transparent; /* Prepare for hover border */
+  transition: all 0.2s ease;
 }
 
 .link-button:hover {
-  background-color: var(--tn-card-hover);
-  transform: translateY(-3px); /* Lift up effect */
-  border-color: var(--tn-accent-cyan);
-  box-shadow: 0 5px 15px rgba(125, 207, 255, 0.15); /* Cyan glow */
-  color: var(--tn-accent-cyan);
+  background-color: var(--ctp-surface1);
+  color: var(--ctp-pink);
+  border-color: var(--ctp-overlay);
+  transform: translateY(-2px);
 }
 
 .footer {
   margin-top: 40px;
   font-size: 14px;
-  color: var(--tn-text-muted);
+  color: var(--ctp-overlay);
 }
 
 .button-container {
@@ -119,35 +116,32 @@ a {
 
 .button-group {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   margin-top: 25px;
 }
 
 .icon-button {
   border: none;
-  width: 45px;
-  height: 45px;
+  width: 42px;
+  height: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.3s ease;
-  background-color: var(--tn-card-bg);
-  border-radius: 50%;
-  color: var(--tn-text-main);
-  border: 1px solid var(--tn-border);
+  transition: all 0.2s ease;
+  background-color: var(--ctp-surface0);
+  border-radius: 12px; /* Squircle shape */
+  color: var(--ctp-subtext);
 }
 
 .icon-button i {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .icon-button:hover {
-  transform: scale(1.1) rotate(5deg);
-  background-color: var(--tn-card-hover);
-  color: var(--tn-accent-pink);
-  border-color: var(--tn-accent-pink);
-  box-shadow: 0 0 15px rgba(187, 154, 247, 0.3); /* Purple glow */
+  background-color: var(--ctp-mauve);
+  color: var(--ctp-base); /* Invert text on hover for contrast */
+  transform: scale(1.05);
 }
 
 .icon-button:active {
@@ -156,11 +150,11 @@ a {
 
 .link-button-text {
   font-size: 14px;
-  color: var(--tn-text-muted);
+  color: var(--ctp-subtext);
 }
 
 .copyright {
   margin-top: 15px;
   font-size: 12px;
-  opacity: 0.6;
+  color: var(--ctp-overlay);
 }
