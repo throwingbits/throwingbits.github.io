@@ -25,36 +25,38 @@ name: "@throwingbits"
 tagline: >-
     An iOS, web, and automation developer from Taiwan 🇹🇼 who also loves sharing, traveling, and writing.
 
-# List of links
-# icon: Use Font Awesome icons (https://fontawesome.com/search?o=r&m=free)
-# text: The displayed text for the link
-# title: The url title
-# url: The URL of the link
-# alt: Alternative text for accessibility
-# target: `_blank` opens in a new tab, `_self` opens in the same frame
-links:
-  - link:
+socials:
+  - social:
       icon: "fa-brands fa-twitch"
-      text: "Twitch"
       url: "https://www.twitch.tv/throwingbits"
       alt: "throwingbit's Twitch"
       title: "throwingbit's Twitch"
       target: "_blank"
-  - link:
+  - social:
       icon: "fa-brands fa-youtube"
-      text: "YouTube"
       url: ""
       alt: "throwingbit's YouTube"
       title: "throwingbit's YouTube"
       target: "_blank"
-  - link:
+  - social:
       icon: "fa-brands fa-instagram"
-      text: "Instagram"
       url: "https://www.instagram.com/throwingbits"
       alt: "throwingbit's Instagram"
       title: "throwingbit's Instagram"
       target: "_blank"
-
+  - social:
+      icon: "fa-brands fa--xtwitter"
+      url: "https://x.com/throwingbits"
+      alt: "throwingbit's X"
+      title: "throwingbit's X"
+      target: "_blank"
+  - social:
+      icon: "fa-brands fa-github"
+      url: "https://www.github.com/throwingbits"
+      alt: "throwingbit's GitHub"
+      title: "throwingbit's GitHub"
+      target: "_blank"
+      
 # Footer copyright message
 # Linkyee is a 100% free, open-source project—feel free to modify the copyright message as you like. :)
 copyright: >
