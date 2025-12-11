@@ -34,18 +34,25 @@ tagline: >-
 # target: `_blank` opens in a new tab, `_self` opens in the same frame
 links:
   - link:
-      icon: "fa-brands fa-medium"
-      text: "Tech Blog <span class='link-button-text'>({{vars.MediumFollowersCountPlugin}} Followers)</span>"
-      url: "https://blog.zhgchg.li"
-      alt: "ZhgChgLi's Tech Blog"
-      title: "ZhgChgLi's Tech Blog"
+      icon: "fa-brands fa-twitch"
+      text: "Twitch"
+      url: "https://www.twitch.tv/throwingbits"
+      alt: "throwingbit's Twitch"
+      title: "throwingbit's Twitch"
       target: "_blank"
   - link:
-      icon: "fa-brands fa-medium"
-      text: "Travelog <span class='link-button-text'>({{vars.MediumFollowersCountPlugin}} Followers)</span>"
-      url: "https://medium.com/ztravel"
-      alt: "ZhgChgLi's Travelog"
-      title: "ZhgChgLi's Travelog"
+      icon: "fa-brands fa-youtube"
+      text: "YouTube"
+      url: ""
+      alt: "throwingbit's YouTube"
+      title: "throwingbit's YouTube"
+      target: "_blank"
+  - link:
+      icon: "fa-brands fa-instagram"
+      text: "Instagram"
+      url: "https://www.instagram.com/throwingbits"
+      alt: "throwingbit's Instagram"
+      title: "throwingbit's Instagram"
       target: "_blank"
 
 # Footer copyright message
