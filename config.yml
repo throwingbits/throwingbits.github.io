@@ -1,7 +1,7 @@
 # Site Configuration
 
 # Theme, mapped to the directory: ./theme/xxxx
-theme: TokyoNight
+theme: CatppuccinMocha
 
 # HTML Language setting
 lang: "en"
