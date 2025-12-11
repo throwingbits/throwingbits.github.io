@@ -7,14 +7,9 @@
 
   <meta charset="UTF-8">
   <meta name="last-modified" content="{{ last_modified_at }}">
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta
     name="viewport"
-    content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
-  >
+    content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
 
   <meta property="og:title" content="{{ title }}" />
   <meta name="author" content="{{ name }}" />
@@ -28,13 +23,7 @@
   <meta property="twitter:image" content="{{ avatar }}" />
   <meta property="twitter:title" content="{{ title }}" />
 
-  <meta name="apple-mobile-web-app-title" content="{{ title }}">
-  <meta name="application-name" content="{{ title }}">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-config" content="./images/favicons/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
-
-  <link rel="stylesheet" href="./styles.minified.css" />
+  <link rel="stylesheet" href="./styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -55,23 +44,7 @@
         {% endfor %}
       </div>
     </div>
-
-    <footer class="footer">
-      {{ footer }}
-      <div class="copyright">{{ copyright }}</div>
-    </footer>
   </div>
-  {% if google_analytics_id %}
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ google_analytics_id }}"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', '{{ google_analytics_id }}');
-    </script>
-  {% endif %}
   <script src="./scripts.js"></script>
 </body>
 </html>

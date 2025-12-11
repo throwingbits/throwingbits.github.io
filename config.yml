@@ -19,7 +19,7 @@ title: "throwingbits"
 name: "@throwingbits"
 
 # Avatar image path
-avatar: "./images/avatar.webp"
+avatar: "../images/avatar.webp"
 
 # Tagline section text
 tagline: >-
