@@ -12,10 +12,8 @@
 
 /* Theme Variables */
 :root {
-  /* YOUR CUSTOM COLOR */
   --primary-accent: #feb326;
 
-  /* Catppuccin Mocha Base Palette */
   --ctp-base: #1e1e2e;       /* Main Background */
   --ctp-surface: #313244;   /* Card Background */
   --ctp-text: #cdd6f4;       /* Main Text */
@@ -52,18 +50,18 @@ a {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 15px;
-  /* Double border effect: thin base, thick CUSTOM accent */
-  border: 4px solid var(--ctp-surface); 
-  outline: 2px solid var(--primary-accent);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;  
+  border: 4px solid var(--ctp-surface);
+  box-shadow: 
+    0 0 0 2px var(--primary-accent),
+    0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .name {
   font-size: 28px;
   font-weight: 700;
   margin: 10px 0;
-  color: var(--primary-accent); /* Colored Name */
+  color: var(--primary-accent);
   letter-spacing: 0.5px;
 }
 
@@ -110,8 +108,8 @@ a {
 }
 
 .icon-button:hover {
-  background-color: var(--primary-accent); /* Background turns yellow */
-  color: var(--ctp-white); /* Text turns dark for contrast */
+  background-color: var(--primary-accent);
+  color: var(--ctp-white);
   transform: scale(1.05);
 }
 
