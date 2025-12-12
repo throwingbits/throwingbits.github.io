@@ -13,12 +13,11 @@
 
   /* Catppuccin Mocha Base Palette */
   --ctp-base: #1e1e2e;       /* Main Background */
-  --ctp-mantle: #181825;     /* Darker background */
-  --ctp-surface0: #313244;   /* Card Background */
-  --ctp-surface1: #45475a;   /* Card Hover */
+  --ctp-surface: #313244;   /* Card Background */
   --ctp-text: #cdd6f4;       /* Main Text */
   --ctp-subtext: #a6adc8;    /* Secondary Text */
   --ctp-overlay: #6c7086;    /* Borders */
+  --ctp-white: #ffffff;
 }
 
 body {
@@ -51,7 +50,7 @@ a {
   object-fit: cover;
   margin-bottom: 15px;
   /* Double border effect: thin base, thick CUSTOM accent */
-  border: 4px solid var(--ctp-surface0); 
+  border: 4px solid var(--ctp-surface); 
   outline: 2px solid var(--primary-accent);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -69,35 +68,6 @@ a {
   margin-bottom: 30px;
   line-height: 1.6;
   color: var(--ctp-subtext);
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 10px;
-}
-
-.link-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  background-color: var(--ctp-surface0);
-  color: var(--ctp-text);
-  padding: 15px;
-  border-radius: 15px;
-  font-size: 18px;
-  font-weight: 600;
-  border: 2px solid transparent;
-  transition: all 0.2s ease;
-}
-
-.link-button:hover {
-  background-color: var(--ctp-surface1);
-  color: var(--primary-accent); /* Text turns yellow on hover */
-  border-color: var(--ctp-overlay);
-  transform: translateY(-2px);
 }
 
 .footer {
@@ -126,7 +96,7 @@ a {
   justify-content: center;
   cursor: pointer;
   transition: all 0.2s ease;
-  background-color: var(--ctp-surface0);
+  background-color: var(--ctp-surface);
   border-radius: 12px;
   color: var(--ctp-subtext);
 }
@@ -137,21 +107,10 @@ a {
 
 .icon-button:hover {
   background-color: var(--primary-accent); /* Background turns yellow */
-  color: var(--ctp-base); /* Text turns dark for contrast */
+  color: var(--ctp-white); /* Text turns dark for contrast */
   transform: scale(1.05);
 }
 
 .icon-button:active {
   transform: scale(0.95);
-}
-
-.link-button-text {
-  font-size: 14px;
-  color: var(--ctp-subtext);
-}
-
-.copyright {
-  margin-top: 15px;
-  font-size: 12px;
-  color: var(--ctp-overlay);
 }
